@@ -10,4 +10,13 @@ public class CNPJ extends Digits {
         this.cnpj = _cnpj;
 
     }
+
+    public String format(){
+        if(isValid()) {
+            return this.cnpj.substring(0, 2) + "." + this.cnpj.substring(2, 5) + "." + this.cnpj.substring(5, 8) + "/" + this.cnpj.substring(8, 12) + "-" + this.cnpj.substring(12);
+        }else{
+            //Throw Custom Exception
+            return "";
+        }
+    }
 }

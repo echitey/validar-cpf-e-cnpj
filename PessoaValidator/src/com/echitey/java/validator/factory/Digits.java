@@ -57,18 +57,11 @@ public class Digits {
             String[] cpfNumbers = digits.split("");
 
             String source = digits.substring(0, qtdDigits - QTD_VERIFICATION_DIGITS);
-            //System.out.println("SOURCE = "+ source);
             int digit = getVerificationDigit(source);
-
-            //System.out.println("\nVerif1 = "+digit);
 
             if(digit == Integer.valueOf(cpfNumbers[qtdDigits - QTD_VERIFICATION_DIGITS])){
 
-                //System.out.println("SOURCE = "+ source+digit);
-
                 digit = getVerificationDigit(source+digit);
-
-                //System.out.println("\nVerif2 = "+ digit);
 
                 if(digit == Integer.valueOf(cpfNumbers[qtdDigits - 1])){
 

@@ -11,4 +11,13 @@ public class CPF extends Digits {
 
     }
 
+    public String format(){
+        if(isValid()) {
+            return this.cpf.substring(0, 3) + "." + this.cpf.substring(3, 6) + "." + this.cpf.substring(6, 9) + "-" + this.cpf.substring(9);
+        }else{
+            //Throw Custom Exception
+            return "";
+        }
+    }
+
 }

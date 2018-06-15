@@ -28,11 +28,11 @@ public class Main {
 
         valid = cpf.isValid();
 
-        System.out.println("\n\nCPF Valid = "+ valid);
+        System.out.println("\n\nCPF: "+ cpf.format() +" Valid = "+ valid);
 
         valid = cnpj.isValid();
 
-        System.out.println("\n\nCNPJ Valid = "+ valid);
+        System.out.println("\n\nCNPJ: "+ cnpj.format()+ " Valid = "+ valid);
 
     }
 }
