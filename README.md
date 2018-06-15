@@ -9,7 +9,7 @@ Para ter acesso a dados de cadatros do CPF ou CNPJ, visite o [site](http://idg.r
 
 ### Como usar?
 
-Na raíz do repositório, encontra-se o arquivo [PessoaValidator.jar](). Baixe-o
+Na raíz do repositório, encontra-se o arquivo [PessoaValidator.jar](PessoaValidator.jar). Baixe-o
 e adicione-o ao seu projeto Java como bibliotéca externa.
 
 Para referenciar a classe CPF/CNPJ da bibliotéca, é preciso importá-la:
